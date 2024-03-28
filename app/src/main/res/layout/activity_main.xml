@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <!-- From Unit Dropdown -->
+    <TextView
+        android:id="@+id/textViewFromLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="From:"
+        android:textSize="18sp"
+        android:textColor="@android:color/black"
+        android:layout_marginBottom="8dp"/>
+
+    <Spinner
+        android:id="@+id/spinnerFromUnit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textViewFromLabel"/>
+
+    <!-- To Unit Dropdown -->
+    <TextView
+        android:id="@+id/textViewToLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="To:"
+        android:textSize="18sp"
+        android:textColor="@android:color/black"
+        android:layout_below="@id/spinnerFromUnit"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="8dp"/>
+
+    <Spinner
+        android:id="@+id/spinnerToUnit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textViewToLabel"/>
+
+    <!-- Input Value Field -->
+    <TextView
+        android:id="@+id/textViewEnterValueLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Enter Value:"
+        android:textSize="18sp"
+        android:textColor="@android:color/black"
+        android:layout_below="@id/spinnerToUnit"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="8dp"/>
+
+    <EditText
+        android:id="@+id/editTextInputValue"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="numberDecimal"
+        android:layout_below="@id/textViewEnterValueLabel"/>
+
+    <!-- Convert Button -->
+    <Button
+        android:id="@+id/buttonConvert"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Convert"
+        android:layout_below="@id/editTextInputValue"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/custome_button"/>
+
+    <!-- Converted Value -->
+    <TextView
+        android:id="@+id/textViewConvertedValueLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Converted Value:"
+        android:textSize="18sp"
+        android:textColor="@android:color/black"
+        android:layout_below="@id/buttonConvert"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="8dp"/>
+
+    <TextView
+        android:id="@+id/textViewConvertedValue"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:layout_below="@id/textViewConvertedValueLabel"
+        android:textColor="@android:color/black"/>
+
+</RelativeLayout>
